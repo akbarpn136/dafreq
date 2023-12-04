@@ -11,5 +11,3 @@ class DefaultLayout(tb.Window):
 
         b2 = tb.Button(self, text="Button 2", bootstyle=(INFO, OUTLINE))
         b2.pack(side=LEFT, padx=5, pady=10)
-
-        self.title = "DaFreq LA3"
