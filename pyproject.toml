@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dafreq"
+version = "0.1.0"
+description = "Aplikasi desktop untuk olah data frekuensi getaran benda uji selama pengujian terowongan angin"
+authors = ["akbarpn136 <akbarpn136@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+dev = "dafreq.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
