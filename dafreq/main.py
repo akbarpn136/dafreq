@@ -1,3 +1,4 @@
+import asyncio
 from layout.default import DefaultLayout
 
 
@@ -7,7 +8,7 @@ def run():
         themename="darkly",
         iconphoto="logo.png",
         minsize=(800, 600),
+        loop=asyncio.get_event_loop()
     )
 
-    app.place_window_center()
-    app.mainloop()
+    asyncio.run(app.show())
