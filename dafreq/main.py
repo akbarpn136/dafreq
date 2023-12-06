@@ -1,4 +1,5 @@
-import asyncio
+from async_tkinter_loop import async_mainloop
+
 from layout.default import DefaultLayout
 
 
@@ -8,7 +9,6 @@ def run():
         themename="darkly",
         iconphoto="logo.png",
         minsize=(800, 600),
-        loop=asyncio.get_event_loop()
     )
 
-    asyncio.run(app.show())
+    async_mainloop(app)
