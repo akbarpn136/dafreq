@@ -2,14 +2,17 @@ from tkinter import filedialog
 import ttkbootstrap as tb
 from ttkbootstrap.constants import *
 
+from components.pohon import PohonComponent
+
 
 class CariComponent:
     def __init__(self, container):
-        self.path = tb.Entry(container, bootstyle="primary", width=30)
-        self.path.grid(column=0, row=0)
+        self.container = container
+        self.path = tb.Entry(self.container, bootstyle="primary", width=26)
+        self.path.grid(column=0, row=0, sticky=NW)
 
-        tb.Button(container, bootstyle="primary",
-                  text="", command=self.opendir).grid(column=1, row=0)
+        tb.Button(self.container, bootstyle="primary",
+                  text="", command=self.opendir).grid(column=1, row=0, sticky=NW)
 
     def opendir(self):
         dir = filedialog.askdirectory()
