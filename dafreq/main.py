@@ -7,7 +7,7 @@ def run():
     app = DefaultLayout(
         title="DaFreq LA3",
         themename="morph",
-        iconphoto="logo.png",
+        iconphoto="assets/logo.png",
         minsize=(800, 600),
     )
 
