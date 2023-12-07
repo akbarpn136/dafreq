@@ -1,12 +1,12 @@
 from async_tkinter_loop import async_mainloop
 
-from layout.default import DefaultLayout
+from layouts.default import DefaultLayout
 
 
 def run():
     app = DefaultLayout(
         title="DaFreq LA3",
-        themename="darkly",
+        themename="morph",
         iconphoto="logo.png",
         minsize=(800, 600),
     )
